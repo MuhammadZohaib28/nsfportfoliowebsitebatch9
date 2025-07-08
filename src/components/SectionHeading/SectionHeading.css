@@ -1,0 +1,13 @@
+.tag {
+  display: inline-block;
+  border: 2px solid blue;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+
+  margin-bottom: 2rem;
+}
+
+.sectionheading {
+}

@@ -1,9 +1,10 @@
 import React from "react";
+import "./Header.css";
 
 const Header = () => {
   const headerData = [
     {
-      item: "JAVERIA",
+      item: "NSF",
       address: "/home",
     },
     {
@@ -18,15 +19,25 @@ const Header = () => {
       item: "Skills",
       address: "/skills",
     },
+    {
+      item: "Portfolio",
+      address: "/portfolio",
+    },
+    {
+      item: "Contact",
+      address: "/contact",
+    },
   ];
 
   return (
-    <header>
-      <ul>
-        {headerData.map((i, name) => (
-          <li>{i.item}</li>
+    <header className="header">
+      <ul className="header-items">
+        {headerData.map((i, index) => (
+          <li key={index}>{i.item}</li>
         ))}
       </ul>
+
+      <button className="header-button">Contact Now</button>
     </header>
   );
 };
