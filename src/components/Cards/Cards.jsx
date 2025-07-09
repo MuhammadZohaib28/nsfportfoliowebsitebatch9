@@ -4,12 +4,12 @@ import { CiStickyNote } from "react-icons/ci";
 
 const Cards = ({ cardNo, title, description, icon }) => {
   return (
-    <div>
+    <div className="cards">
       <h1>{cardNo}</h1>
-      <span>{title}</span>
+      <span className="cards-title">{title}</span>
       <p>{description}</p>
 
-      <span>{icon}</span>
+      <span className="cards-icon">{icon}</span>
     </div>
   );
 };

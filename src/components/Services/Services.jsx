@@ -3,6 +3,9 @@ import "./Services.css";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import Cards from "../Cards/Cards";
 import { FaMobileRetro } from "react-icons/fa6";
+import { FaLaptop } from "react-icons/fa";
+import { BsTriangle } from "react-icons/bs";
+import { RiLayout5Line } from "react-icons/ri";
 
 const Services = () => {
   const cardsData = [
@@ -18,25 +21,40 @@ const Services = () => {
       cardTile: "Development",
       cardDescription:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      cardIcon: <FaMobileRetro />,
+      cardIcon: <FaLaptop />,
     },
     {
       sno: "03",
       cardTile: "SEO Marketing",
       cardDescription:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      cardIcon: <FaMobileRetro />,
+      cardIcon: <BsTriangle />,
     },
     {
       sno: "04",
       cardTile: "Backend Development",
       cardDescription:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      cardIcon: <FaMobileRetro />,
+      cardIcon: <RiLayout5Line />,
+    },
+    {
+      sno: "04",
+      cardTile: "Backend Development",
+      cardDescription:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      cardIcon: <RiLayout5Line />,
+    },
+    {
+      sno: "04",
+      cardTile: "Backend Development",
+      cardDescription:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      cardIcon: <RiLayout5Line />,
     },
   ];
+
   return (
-    <div>
+    <div className="services">
       <SectionHeading
         tag={"Services"}
         sectionheading={"Services I Offer"}
@@ -44,14 +62,17 @@ const Services = () => {
         shapeVisible={true}
       />
 
-      {cardsData.map((item, index) => (
-        <Cards
-          cardNo={item.sno}
-          title={item.cardTile}
-          description={item.cardDescription}
-          icon={item.cardIcon}
-        />
-      ))}
+      <div className="services-cards">
+        {cardsData.map((item, index) => (
+          <Cards
+            key={index}
+            cardNo={item.sno}
+            title={item.cardTile}
+            description={item.cardDescription}
+            icon={item.cardIcon}
+          />
+        ))}
+      </div>
     </div>
   );
 };
