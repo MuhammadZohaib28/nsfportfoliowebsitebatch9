@@ -53,11 +53,50 @@
   box-shadow: 7px 7px 0 0 black;
 }
 
-
-.skills-icon{
+.skills-icon {
   background-color: palevioletred;
   border-radius: 100%;
   font-size: 1.4rem;
   padding: 1rem 1.2rem;
   text-align: center;
+}
+
+.projectcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  border: 2px solid black;
+  width: 400px;
+}
+
+.projectcard:hover {
+  box-shadow: 5px 5px 0 0 black;
+}
+
+.projectcard-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.projectcard-image {
+  width: 397px;
+  border: 2px solid black;
+}
+
+.projectcard-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.projectcard-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgb(130, 130, 219);
+  padding: 1rem;
+  font-size: 6rem;
 }
