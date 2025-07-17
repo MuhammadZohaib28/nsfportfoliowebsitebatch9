@@ -66,8 +66,8 @@ const LatestProjects = () => {
       </div>
 
       {modalOpen && (
-        <div className="modalopen">
-          <img src={imageAvailable} />
+        <div className="modalopen" onClick={() => setModalOpen(false)}>
+          <img src={imageAvailable} onClick={(e) => e.stopPropagation()} />
         </div>
       )}
     </div>

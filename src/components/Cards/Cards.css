@@ -100,3 +100,25 @@
   padding: 1rem;
   font-size: 6rem;
 }
+
+.testimonialCard {
+  border: 2px solid black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.testimonialCard p {
+  text-align: center;
+}
+
+.testimonialCard img {
+  height: 35%;
+  width: 35%;
+  border-radius: 100%;
+}

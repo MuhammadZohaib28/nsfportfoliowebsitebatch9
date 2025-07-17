@@ -1,0 +1,13 @@
+.testimonial{
+    padding: 3rem 4rem;
+    background-color: antiquewhite;
+}
+
+.testimonial-cards{
+    display: flex;
+    /* overflow-x: scroll; */
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    justify-content: center;
+}

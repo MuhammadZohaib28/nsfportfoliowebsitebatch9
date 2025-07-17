@@ -1,0 +1,121 @@
+.form {
+  padding: 3rem 4rem;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-bottom-left {
+  border: 2px solid black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  background-color: white;
+}
+
+.form-bottom-right h1 {
+  font-size: 2.5rem;
+  color: rgb(28, 28, 28);
+}
+
+.form-bottom-right p {
+  font-size: 1.3rem;
+  color: rgb(69, 69, 69);
+}
+
+label {
+  font-size: 1.2rem;
+  color: rgb(51, 51, 51);
+}
+
+.form-firstname-email {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-firstname {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-subject-message-button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.formData {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.formData-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: rgb(241, 228, 42);
+  color: black;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.formData-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bottom-border {
+  border-bottom: 3px solid black;
+}
+
+.form-image-container {
+  height: 300px;
+  width: 400px;
+}
+
+.form-image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.form-bottom-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}

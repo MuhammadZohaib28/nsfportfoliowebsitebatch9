@@ -11,20 +11,20 @@
 }
 
 .modalopen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 500px;
-  height: 500px;
-  margin: auto;
-  z-index: 1000;
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.769);
 }
 
 .modalopen img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -40rem;
+  width: 75%;
+  height: 75%;
+  border-radius: 2rem;
 }
