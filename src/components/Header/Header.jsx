@@ -1,31 +1,31 @@
 import React from "react";
 import "./Header.css";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   const headerData = [
     {
       item: "NSF",
-      address: "/home",
     },
     {
       item: "Home",
-      address: "/home",
+      address: "home",
     },
     {
       item: "Services",
-      address: "/services",
+      address: "services",
     },
     {
       item: "Skills",
-      address: "/skills",
+      address: "skills",
     },
     {
       item: "Portfolio",
-      address: "/portfolio",
+      address: "portfolio",
     },
     {
       item: "Contact",
-      address: "/contact",
+      address: "contact",
     },
   ];
 
@@ -33,7 +33,18 @@ const Header = () => {
     <header className="header">
       <ul className="header-items">
         {headerData.map((i, index) => (
-          <li key={index}>{i.item}</li>
+          <li key={index}>
+            <ScrollLink
+              to={i.address}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              activeClass="bg-red-500 p-1 text-white"
+            >
+              {i.item}
+            </ScrollLink>
+          </li>
         ))}
       </ul>
 

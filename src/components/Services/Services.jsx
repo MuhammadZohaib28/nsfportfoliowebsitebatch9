@@ -54,7 +54,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="services">
+    <div className="services" id="services">
       <SectionHeading
         tag={"Services"}
         sectionheading={"Services I Offer"}

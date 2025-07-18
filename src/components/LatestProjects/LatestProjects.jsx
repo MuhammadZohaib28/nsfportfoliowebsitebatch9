@@ -46,7 +46,7 @@ const LatestProjects = () => {
   ];
 
   return (
-    <div className="latestproject">
+    <div className="latestproject" id="portfolio">
       <SectionHeading
         sectionheading={"Latest Projects"}
         tag={"Portfolio"}

@@ -24,7 +24,7 @@ const Form = () => {
   ];
 
   return (
-    <div className="form">
+    <div className="form" id="contact">
       <SectionHeading
         sectionheading={"Let's Discuss Project"}
         tag={"Contact"}

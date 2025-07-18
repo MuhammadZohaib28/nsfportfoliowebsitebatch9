@@ -5,7 +5,7 @@ import './HeroSection.css'
 
 const HeroSection = () => {
   return (
-    <div className="herosection">
+    <div className="herosection" id="home">
       <div className="herosection-firstsection">
         <SectionHeading
           sectionheading={"We Have Design Experience"}

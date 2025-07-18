@@ -25,10 +25,11 @@
   cursor: pointer;
 }
 
-.header-items li:hover {
-  background-color: rgb(255, 208, 0);
-  padding: 0.4rem;
-  border-radius: 1rem;
+.header-items .active {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 .header-button {
